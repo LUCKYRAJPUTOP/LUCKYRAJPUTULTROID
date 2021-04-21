@@ -36,7 +36,7 @@ async def assistant(event):
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
                 f"Hey there, this is Ultroid Assistant of {OWNER_NAME}!\n\n{ok}",
-                buttons=[Button.url("Know More", url="https://t.me/TeamUltroid")],
+                buttons=[Button.url("Know More", url="https://t.me/LuckyWritings")],
             )
         else:
             u = await event.client.get_entity(event.chat_id)
@@ -44,7 +44,7 @@ async def assistant(event):
             mention = f"[{get_display_name(u)}](tg://user?id={u.id})"
             await event.reply(
                 Redis("STARTMSG").format(me=me, mention=mention),
-                buttons=[Button.url("Know More", url="https://t.me/TeamUltroid")],
+                buttons=[Button.url("Know More", url="https://t.me/LuckyWritings")],
             )
 
 
