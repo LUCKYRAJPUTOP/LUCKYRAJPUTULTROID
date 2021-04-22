@@ -3,7 +3,7 @@
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-FROM Luckyrajputop/Luckyrajputultroid:0.0.3
+FROM luckyrajputop/luckyrajputultroid:0.0.3
 #RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
 #    dpkg -i ./google-chrome-stable_current_amd64.deb; apt -fqqy install && \
 #    rm ./google-chrome-stable_current_amd64.deb
